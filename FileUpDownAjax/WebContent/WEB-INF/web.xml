@@ -9,4 +9,18 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <display-name>AJAXFileUploadApp</display-name>
+
+	<servlet>
+	    <description>Servlet for file uploads</description>
+	    <display-name>File Upload Servlet</display-name>
+	    <servlet-name>FileUploadServlet</servlet-name>     
+	    <servlet-class>com.psclistens.ajax.fileupload.FileUploadServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+	    <servlet-name>FileUploadServlet</servlet-name>
+	    <url-pattern>/servlet/FileUploadServlet</url-pattern>
+	</servlet-mapping>
+  
 </web-app>
